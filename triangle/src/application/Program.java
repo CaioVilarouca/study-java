@@ -22,13 +22,7 @@ public class Program {
 
 		System.out.printf("X area %.4f", sum.area(triangleX));
 		System.out.printf("\nY area %.4f\n",sum.area(triangleY));
-		
-		if(sum.area(triangleX) > sum.area(triangleY)) {
-			System.out.println("Maior area X");
-		}else {
-			System.out.println("Maior area Y");
-		}
-
+		System.out.println(sum.area(triangleX) > sum.area(triangleY)?"Maior area X":"Maior area Y");
 		scanner.close();
 	}
 }
