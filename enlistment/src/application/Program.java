@@ -1,6 +1,8 @@
 package application;
 
 import java.util.Scanner;
+
+import entities.Form;
 import entities.People;
 
 public class Program {
@@ -14,6 +16,7 @@ public class Program {
 			System.out.print("Digite sua ano de nasc: ");
 			people.setYear(scanner.nextInt());
 			
+			Form form = new Form();
 			scanner.close();
 		}
 }

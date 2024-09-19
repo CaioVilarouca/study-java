@@ -7,7 +7,7 @@ public class DateNow {
 	private Date date = new Date();
 	private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy");
 	
-	public int dateNow() {
+	public int dateCorrent() {
 		String conversonDateString = simpleDateFormat.format(date);
 		int conversonDateInt = Integer.parseInt(conversonDateString);
 		return conversonDateInt;
