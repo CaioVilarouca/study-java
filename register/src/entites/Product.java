@@ -16,10 +16,4 @@ public class Product {
 	public void setValue(Double value) {
 		this.value = value;
 	}
-	@Override
-	public String toString() {
-		return "Product [name=" + name + ", value=" + value + "]";
-	}
-	
-	
 }
