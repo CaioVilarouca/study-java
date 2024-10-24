@@ -25,7 +25,7 @@ public class Program {
 			formWeight = scanner.nextDouble();
 			
 			// Passando meu argumentos no construtor 
-			System.out.println("Formulário de Academia");
+			System.out.printf("------- I M C -------");
 			People people = new People(formName, formHeight, formWeight);
 			
 			// Chamando as funções do formulário
