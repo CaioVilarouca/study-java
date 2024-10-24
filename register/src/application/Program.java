@@ -5,5 +5,4 @@ public class Program {
 		UI ui = new UI();
 		ui.system();
 	}
-	
 }
