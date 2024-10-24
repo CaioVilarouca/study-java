@@ -25,11 +25,11 @@ public class Program {
 			formWeight = scanner.nextDouble();
 			
 			// Passando meu argumentos no construtor 
-			System.out.printf("------- I M C -------");
+			System.out.printf("\n------- I M C -------");
 			People people = new People(formName, formHeight, formWeight);
 			
 			// Chamando as funções do formulário
-			System.out.printf("Nome %s, IMC: %.2f \n", people.getName(), form.calculationImc(people));
+			System.out.printf("\nNome %s, IMC: %.2f \n", people.getName(), form.calculationImc(people));
 			form.tableImc(people);
 			
 			scanner.close();
