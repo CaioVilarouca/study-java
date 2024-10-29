@@ -30,7 +30,7 @@ public class UI {
 				product.setValue(scanner.nextDouble());
 				System.out.print("Quantidade do produto :");
 				hub.setAmount(scanner.nextInt());
-				
+
 				whileTest = false;
 			} catch (Exception e) {
 				System.out.print("Digite novamente.\nDados incorreto!");
@@ -39,5 +39,9 @@ public class UI {
 			}
 			
 		}
+		System.out.println(product);
+		System.out.println(hub);
+		System.out.printf("total R$" + hub.getValueTotal(hub.getAmount(), product.getValue()));
+		
 	}
 }
