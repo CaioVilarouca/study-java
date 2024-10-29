@@ -2,6 +2,20 @@ package entites;
 
 public class Hub {
 	private int amount;
+	private double amountEnd;
+	private Product product;
+	
+	
+	
+	public Hub() {
+		super();
+	}
+
+	public Hub(int amount, Product product) {
+		super();
+		this.amount = amount;
+		this.product = product;
+	}
 
 	public int getAmount() {
 		return amount;
@@ -11,13 +25,11 @@ public class Hub {
 		this.amount = amount;
 	}
 	
-	public double getValueTotal(int amount, double value) {
-		return amount * value;
+	
+	
+	public void getValueTotal() {
+		amountEnd = amount * product.getValue();
 	}
 
-	@Override
-	public String toString() {
-		return "Hub [amount=" + amount + "]";
-	}
 	
 }

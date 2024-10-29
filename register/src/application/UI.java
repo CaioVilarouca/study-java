@@ -8,11 +8,11 @@ import entites.Product;
 public class UI {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
-	Hub hub = new Hub();
 	
 	public void system() {
 		star();
 		register();		
+		printStock();
 	}
 	
 	public void star() {
@@ -23,13 +23,16 @@ public class UI {
 		boolean whileTest = true;
 		while(whileTest) {
 			try {
+				// Coleta de dados
 				System.out.println("\n\n\nNovo registro:");
 				System.out.print("Nome do produto :");
 				product.setName(scanner.nextLine());
 				System.out.print("Valor de custo do produto R$:");
 				product.setValue(scanner.nextDouble());
 				System.out.print("Quantidade do produto :");
-				hub.setAmount(scanner.nextInt());
+				
+				Hub hub = new Hub(scanner.nextInt(), product);
+				hub.getValueTotal();
 
 				whileTest = false;
 			} catch (Exception e) {
@@ -37,11 +40,10 @@ public class UI {
 				whileTest = true;
 				scanner.nextLine();
 			}
-			
 		}
+	}
+	
+	public void printStock() {
 		System.out.println(product);
-		System.out.println(hub);
-		System.out.printf("total R$" + hub.getValueTotal(hub.getAmount(), product.getValue()));
-		
 	}
 }
