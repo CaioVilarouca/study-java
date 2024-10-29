@@ -2,11 +2,13 @@ package application;
 
 import java.util.Scanner;
 
+import entites.Hub;
 import entites.Product;
 
 public class UI {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
+	Hub hub = new Hub();
 	
 	public void system() {
 		star();
@@ -27,6 +29,7 @@ public class UI {
 				System.out.print("Valor de custo do produto R$:");
 				product.setValue(scanner.nextDouble());
 				System.out.print("Quantidade do produto :");
+				hub.setAmount(scanner.nextInt());
 				
 				whileTest = false;
 			} catch (Exception e) {
