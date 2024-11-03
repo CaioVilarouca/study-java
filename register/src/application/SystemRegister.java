@@ -57,7 +57,6 @@ public class SystemRegister {
             } 
         }
         hubStock.getValueStock(product.getValueProduct(), hubStock.getAmount());
-        scanner.close();
 	}
 	
 	public void register() {
