@@ -3,15 +3,18 @@ package application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import entities.HubStock;
 import entities.Product;
 
 public class SystemRegister {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
+	HubStock hubStock = new HubStock();
 	
 	public void star() {
 		System.out.println("Novo registro de produto.\n");
 		newRegister();
+		register();
 	}
 	
 	public void newRegister() {
@@ -33,9 +36,30 @@ public class SystemRegister {
                 
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
-            }
-            
-            
+            } 
         }
+        
+        while (true) {
+        	try {
+				System.out.print("Quantidade x");
+				hubStock.setAmount(scanner.nextInt());
+				if (hubStock.getAmount() <= 0) {
+					throw new IllegalArgumentException("A quantidade não pode ser negativo ou 0");
+				}
+				break;
+				
+			} catch (InputMismatchException e) {
+                System.out.println("Por favor, insira um valor numérico.");
+                scanner.next();
+                
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            } 
+        }
+	}
+	
+	public void register() {
+		System.out.println("\nNovo registro inserido\n");
+		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor do estoque: [R$]", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount());
 	}
 }
