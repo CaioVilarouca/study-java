@@ -5,4 +5,4 @@ public class Program {
 		SystemRegister systemRegister = new SystemRegister();
 		systemRegister.star();
 	}
-}// Caio Vilarouca
+}

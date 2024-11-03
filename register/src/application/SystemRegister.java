@@ -56,10 +56,12 @@ public class SystemRegister {
                 System.out.println(e.getMessage());
             } 
         }
+        hubStock.getValueStock(product.getValueProduct(), hubStock.getAmount());
+        scanner.close();
 	}
 	
 	public void register() {
 		System.out.println("\nNovo registro inserido\n");
-		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor do estoque: [R$]", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount());
+		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor do estoque: [R$%.2f]", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
 	}
 }
