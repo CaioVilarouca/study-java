@@ -11,12 +11,13 @@ public class SystemRegister {
 	Product product = new Product();
 	HubStock hubStock = new HubStock();
 	
-	public void star() {
+	public void starRegister() {
 		for (int i = 0; i < 3; i++) {
 			System.out.println("\nNovo registro de produto.\n");
 			newRegister();
 			register();
 			scanner.nextLine();// Consome qualquer linha remanascente
+			printStock();
 		}
 	}
 	
@@ -65,5 +66,8 @@ public class SystemRegister {
 	public void register() {
 		System.out.println("\nNovo registro inserido\n");
 		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor d1o estoque: [R$%.2f]", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
+	}
+	
+	public void printStock() {
 	}
 }
