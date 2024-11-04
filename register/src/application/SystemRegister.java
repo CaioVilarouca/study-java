@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 import entities.HubStock;
 import entities.Product;
-import entities.Stock;
 
 public class SystemRegister {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
 	HubStock hubStock = new HubStock();
+
 	
 	public void starRegister() {
 			System.out.println("\nNovo registro de produto.\n");
