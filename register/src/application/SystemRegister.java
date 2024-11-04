@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 import entities.HubStock;
 import entities.Product;
+import entities.Stock;
 
 public class SystemRegister {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
 	HubStock hubStock = new HubStock();
+	Stock stock = new Stock();	
 	
 	public void starRegister() {
-		for (int i = 0; i < 3; i++) {
 			System.out.println("\nNovo registro de produto.\n");
 			newRegister();
 			register();
 			scanner.nextLine();// Consome qualquer linha remanascente
 			printStock();
-		}
 	}
 	
 	public void newRegister() {
@@ -69,5 +69,7 @@ public class SystemRegister {
 	}
 	
 	public void printStock() {
+		stock.stockRegister(product.getNameProduct(),hubStock.getAmount(), hubStock.getValueStock());
+		stock.printStock();
 	}
 }

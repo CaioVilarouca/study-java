@@ -13,4 +13,12 @@ public class Stock {
 			stockValue[i] = value;
 		}
 	}
+	
+	public void printStock() {
+		for (int i = 0; i < 3; i++) {
+			System.out.println("Nome: " + stockName[i]);	
+			System.out.println("QTED x" + stockAmount[i]);	
+			System.out.println("R$: " + stockValue[i]);	
+		}
+	}
 }
