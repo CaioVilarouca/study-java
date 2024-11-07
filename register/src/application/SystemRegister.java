@@ -9,20 +9,22 @@ import entities.Product;
 public class SystemRegister {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
-	HubStock hubStock = new HubStock();
-
+	HubStock hubStock = new HubStock();	
+	private int i;
 	
 	public void starRegister() {
-			System.out.println("\nNovo registro de produto.\n");
+		for (i = 1; 1 <= 3; i++ ) {
+			System.out.println("\nNovo registro de produto. \n");
 			newRegister();
 			register();
 			scanner.nextLine();// Consome qualquer linha remanascente
+		}
 	}
 	
 	public void newRegister() {
         System.out.print("Nome: ");
         product.setNameProduct(scanner.nextLine());
-		
+		        
         while (true) {
             try {
                 System.out.print("Valor R$ ");
@@ -62,7 +64,7 @@ public class SystemRegister {
 	}
 	
 	public void register() {
-		System.out.println("\nNovo registro inserido\n");
-		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor d1o estoque: [R$%.2f]", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
+		System.out.println("\nNovo registro inserido | Número [" + i +"]:\n");
+		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor d1o estoque: [R$%.2f] \n\n", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
 	}
 }
