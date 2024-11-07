@@ -17,7 +17,7 @@ public class HubStock {
 	}
 
 	// Calculando o valor do estoque
-	public void getValueStock (double value, int amount) {
-		valueStock = value * amount;
+	public double getValueStock (double value, int amount) {
+		return valueStock = value * amount;
 	}
 }
