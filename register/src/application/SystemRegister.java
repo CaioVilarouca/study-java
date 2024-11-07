@@ -2,20 +2,18 @@ package application;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 import entities.HubStock;
 import entities.Product;
+import entities.Stock;
 
 public class SystemRegister {
     Scanner scanner = new Scanner(System.in);
     Product product = new Product();
     HubStock hubStock = new HubStock();
-
-    // Votores
-    private String[] nameStock = new String[3];
-    private Integer[] amountStock = new Integer[3];
-    private Double[] valueStock = new Double[3];
-    private double valueEnd = 0;
-
+    Stock stock = new Stock();
+    
+    
     public void starRegister() {
         for (int i = 0; i < 3; i++) {
             System.out.println("\nNovo registro de produto. \n");
@@ -23,7 +21,7 @@ public class SystemRegister {
             register(i);
             scanner.nextLine(); //Consumir a quebra de linha
         }
-        printRegister();
+        stock.printRegister();
     }
 
     public void newRegister(int i) {
@@ -65,12 +63,10 @@ public class SystemRegister {
         }
 
         // Calculando o valor
-        valueEnd += hubStock.getValueStock(product.getValueProduct(), hubStock.getAmount());
+        hubStock.getValueStock(product.getValueProduct(), hubStock.getAmount());
 
-        // Armazenado os dados
-        nameStock[i] = product.getNameProduct();
-        amountStock[i] = hubStock.getAmount();
-        valueStock[i] = hubStock.getValueStock();
+       // Armazenando os dados
+        stock.vectorStock(product.getNameProduct(), hubStock.getAmount(), hubStock.getValueStock(), i);
     }
 
     // Print do produto sendo registrado
@@ -78,16 +74,5 @@ public class SystemRegister {
         System.out.println("\nNovo registro inserido | Número [" + (i + 1) + "]:\n");
         System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor do estoque: [R$%.2f] \n\n",
                 product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
-    }
-
-    // Print dos registros
-    public void printRegister() {
-        System.out.println("\nRegistros de Produtos:");
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Nome do produto: " + nameStock[i]);
-            System.out.println("Quantidade: " + amountStock[i]);
-            System.out.printf("Valor do estoque: R$%.2f \n", valueStock[i]);
-        }
-        System.out.printf("\nValor do estoque todo R$ %.2f", valueEnd);
     }
 }
