@@ -10,20 +10,28 @@ public class SystemRegister {
 	Scanner scanner = new Scanner(System.in);
 	Product product = new Product();
 	HubStock hubStock = new HubStock();	
+	
+	// Vector
+	private String[] nameStock = new String[3];
+	private Integer[] amountStock = new Integer[3];
+	private Double[] valueStock = new Double[3];
+	
 	private int i;
 	
 	public void starRegister() {
-		for (i = 1; 1 <= 3; i++ ) {
+		for (i = 0; i < 3; i++ ) {
 			System.out.println("\nNovo registro de produto. \n");
 			newRegister();
 			register();
 			scanner.nextLine();// Consome qualquer linha remanascente
 		}
+		printRegister();
 	}
 	
 	public void newRegister() {
         System.out.print("Nome: ");
         product.setNameProduct(scanner.nextLine());
+        nameStock[i] = product.getNameProduct();
 		        
         while (true) {
             try {
@@ -60,11 +68,20 @@ public class SystemRegister {
                 System.out.println(e.getMessage());
             } 
         }
+        // valor do estoque
         hubStock.getValueStock(product.getValueProduct(), hubStock.getAmount());
+        
+        amountStock[i] = hubStock.getAmount();
+        valueStock[i] = hubStock.getValueStock();
 	}
 	
 	public void register() {
-		System.out.println("\nNovo registro inserido | Número [" + i +"]:\n");
+		System.out.println("\nNovo registro inserido | Número [" + i + 1 +"]:\n");
 		System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor d1o estoque: [R$%.2f] \n\n", product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
 	}
+	
+	public void printRegister() {
+		
+	}
+	
 }
