@@ -30,7 +30,7 @@ public class SystemRegister {
         System.out.print("Nome: ");
         product.setNameProduct(scanner.nextLine());
 
-        // Coleta de dados
+        // Coleta de valor do produto
         while (true) {
             try {
                 System.out.print("Valor R$ ");
@@ -47,7 +47,7 @@ public class SystemRegister {
             }
         }
 
-        
+        // Coleta de quantidade do produto
         while (true) {
             try {
                 System.out.print("Quantidade: ");
@@ -73,12 +73,14 @@ public class SystemRegister {
         valueStock[i] = hubStock.getValueStock();
     }
 
+    // Print do produto sendo registrado
     public void register(int i) {
         System.out.println("\nNovo registro inserido | Número [" + (i + 1) + "]:\n");
         System.out.printf("Nome: [%s] | Preço de custo: [R$%.2f] \nQuantidade em estoque: [x%d]\nValor do estoque: [R$%.2f] \n\n",
                 product.getNameProduct(), product.getValueProduct(), hubStock.getAmount(), hubStock.getValueStock());
     }
 
+    // Print dos registros
     public void printRegister() {
         System.out.println("\nRegistros de Produtos:");
         for (int i = 0; i < 3; i++) {
