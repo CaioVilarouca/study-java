@@ -7,6 +7,7 @@ public class Stock {
     private Double[] valueStock = new Double[3];
     private double valueEnd = 0;
     
+    // vetores 
     public void vectorStock (String name, int amount, double value, int i) {
     		 nameStock[i] = name;
     	     amountStock[i] = amount;
