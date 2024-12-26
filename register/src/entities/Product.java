@@ -5,7 +5,6 @@ public class Product {
 		private Double valueProduct;
 		
 		public Product(String nameProduct, Double valueProduct) {
-
 			this.nameProduct = nameProduct;
 			this.valueProduct = valueProduct;
 		}

@@ -1,7 +1,14 @@
 package entities;
 
 public class HubStock {
+	private Product product;
 	private Integer amount;
+	
+	public HubStock(Product product, Integer amount) {
+		this.product = product;
+		this.amount = amount;
+	}
+
 	private Double valueStock;
 		
 		public Integer getAmount() {
