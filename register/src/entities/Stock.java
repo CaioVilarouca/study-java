@@ -1,5 +1,9 @@
 package entities;
 
+public class Stock {
+	
+}
+
 /*
 	public class Stock {
 	    // Votores

@@ -1,8 +1,8 @@
 package entities;
-/*
-	public class HubStock {
-		private Integer amount;
-		private Double valueStock;
+
+public class HubStock {
+	private Integer amount;
+	private Double valueStock;
 		
 		public Integer getAmount() {
 			return amount;
@@ -20,5 +20,4 @@ package entities;
 		public double getValueStock (double value, int amount) {
 			return valueStock = value * amount;
 		}
-	}
-*/
+}
