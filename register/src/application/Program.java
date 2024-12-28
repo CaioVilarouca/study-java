@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import entities.HubStock;
 import entities.Product;
+import entities.Stock;
 
 public class Program{
 	public static void main(String[] args) {
@@ -14,6 +15,8 @@ public class Program{
 		
 		System.out.print("Value stock: ");
 		valueStock = scanner.nextInt();
+		
+		Stock[] stock = new Stock[valueStock];
 		
 		for(int i = 0; i < valueStock; i++){
 			scanner.nextLine();
@@ -26,8 +29,11 @@ public class Program{
 			value = scanner.nextDouble();
 			
 			Product product = new Product(name, value);
-			HubStock hubStock = new HubStock(product, amount);
+			HubStock hubStock = new HubStock(amount);
+			stock[i] = new Stock(product, hubStock);
 		}
+		
+		
 		scanner.close();
 	}
-}
+}// tratar os erros; calcular o estoque; print na tela;
