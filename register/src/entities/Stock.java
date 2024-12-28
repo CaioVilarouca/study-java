@@ -8,7 +8,11 @@ public class Stock {
 		this.product = product;
 		this.hubStock = hubStock;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Stock [product=" + product + ", hubStock=" + hubStock + "]";
+	}
 	
 	
 }

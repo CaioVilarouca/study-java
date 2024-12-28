@@ -33,6 +33,10 @@ public class Program{
 			stock[i] = new Stock(product, hubStock);
 		}
 		
+		System.out.println();
+		for (Stock print : stock) {
+			System.out.println(print);
+		}
 		
 		scanner.close();
 	}

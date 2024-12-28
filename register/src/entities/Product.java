@@ -8,5 +8,10 @@ public class Product {
 			this.nameProduct = nameProduct;
 			this.valueProduct = valueProduct;
 		}
+
+		@Override
+		public String toString() {
+			return " " + nameProduct + " " + valueProduct;
+		}
 }
 		

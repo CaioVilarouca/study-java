@@ -7,4 +7,8 @@ public class HubStock {
 		this.amount = amount;
 	}
 
+	@Override
+	public String toString() {
+		return " " + amount;
+	}	
 }
