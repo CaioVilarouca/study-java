@@ -1,12 +1,18 @@
 package entities;
 
 public class HubStock {
-	private Integer amount;
+	private int amount;
+	private Product product;
 	
-	public HubStock(Integer amount) {
+	public HubStock(int amount, Product product) {
 		this.amount = amount;
+		this.product = product;
 	}
 
+	public double sum() {
+		return product.getValueProduct() * amount;
+	}
+	
 	@Override
 	public String toString() {
 		return " " + amount;

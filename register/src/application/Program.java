@@ -10,15 +10,15 @@ public class Program{
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String name;
-		int amount, valueStock;
-		double value;
+		int amount,valueSize;
+		double value, valueStock = 0;
 		
-		System.out.print("Value stock: ");
-		valueStock = scanner.nextInt();
+		System.out.print("Size stock: ");
+		valueSize = scanner.nextInt();
 		
-		Stock[] stock = new Stock[valueStock];
+		Stock[] stock = new Stock[valueSize];
 		
-		for(int i = 0; i < valueStock; i++){
+		for(int i = 0; i < valueSize; i++){
 			scanner.nextLine();
 			System.out.println("");
 			System.out.print("Name product   :");
@@ -29,7 +29,8 @@ public class Program{
 			value = scanner.nextDouble();
 			
 			Product product = new Product(name, value);
-			HubStock hubStock = new HubStock(amount);
+			HubStock hubStock = new HubStock(amount, product);
+			valueStock += hubStock.sum();
 			stock[i] = new Stock(product, hubStock);
 		}
 		
@@ -37,6 +38,7 @@ public class Program{
 		for (Stock print : stock) {
 			System.out.println(print);
 		}
+		System.out.printf("Value Stock R$%.2f", valueStock);
 		
 		scanner.close();
 	}
