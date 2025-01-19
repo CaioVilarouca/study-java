@@ -1,5 +1,6 @@
 package altura;
 
+import java.awt.print.Printable;
 import java.util.Scanner;
 
 public class Program {
@@ -9,7 +10,7 @@ public class Program {
 		
 		int number, ager;
 		String name;
-		double height;
+		double height, printResultHeight = 0;
 		
 		System.out.print("Quantas pessoas serão digitadas? ");
 		number = scanner.nextInt();
@@ -18,18 +19,17 @@ public class Program {
 		
 		for(int i = 0; i < document.length; i++) {
 			System.out.println("Dados da " + (i + 1)  + " primeira pessoa.");
-			System.out.print("Nome: ");
-			name = scanner.next();
-			System.out.print("Idade: ");
-			ager = scanner.nextInt();
+		
 			System.out.print("Altura: ");
 			height = scanner.nextDouble();
 			
-			document[i] = new Document(name, ager, height);
+			document[i] = new Document("caio", 0, height);
 		}
 		
 		for (Document print : document) {
+			printResultHeight = print.resultHeight(print.getHeight(), printResultHeight);
 		}
+		System.out.printf("Altura média: %.2f", printResultHeight / document.length);
 	}
 
 }

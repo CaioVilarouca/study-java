@@ -10,42 +10,34 @@ public class Document {
 		this.ager = ager;
 		this.height = height;
 	}
-
+	
+	public double resultHeight(double height, double result) {
+		return result += height;
+	}
+	
 	public String getName() {
 		return name;
 	}
-
-
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
-
 	public Integer getAger() {
 		return ager;
 	}
-
-
 
 	public void setAger(Integer ager) {
 		this.ager = ager;
 	}
 
-
-
 	public Double getHeight() {
 		return height;
 	}
 
-
-
 	public void setHeight(Double height) {
 		this.height = height;
 	}
-
-
 
 	@Override
 	public String toString() {
