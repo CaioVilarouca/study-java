@@ -7,5 +7,10 @@ public class ProgramTest {
 			int numberX = (int) obj;
 			System.out.println(numberX);
 
+			String[] vetor = new String[] {"Caio", "Vinício", "Nunes", "Vilarouca"};
+			
+			for (String x: vetor) {
+				System.out.print(" " + x);
+			}
 	}
 }
