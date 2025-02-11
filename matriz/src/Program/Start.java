@@ -30,5 +30,26 @@ public class Start {
 				matriz[i][j] = scanner.nextInt();
 			}
 		}
+		
+		// Primeira posição
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				if (matriz[i][j] == position) {
+					System.out.println("A primeira aparição: " + i + " " + j);
+					break;
+				}
+			}
+		}
+		
+		// Números negativos
+		int number = 0;
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				if (matriz[i][j] < 0) {
+					number++;
+				}
+			}
+		}
+		System.out.println("Números negativos encontrados: " + number);
 	}
 }
