@@ -1,8 +1,11 @@
 package teste;
 
+import java.util.Scanner;
+
 public class ProgramTest {
 	public static void main(String[] args) {
-			int number = 21;
+
+				int number = 21;
 			Object obj = number;
 			int numberX = (int) obj;
 			System.out.println(numberX);
@@ -12,5 +15,6 @@ public class ProgramTest {
 			for (String x: vetor) {
 				System.out.print(" " + x);
 			}
+	
 	}
 }
