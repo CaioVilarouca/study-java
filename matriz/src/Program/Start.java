@@ -26,30 +26,30 @@ public class Start {
 		int[][] matriz = new int[line][column];
 		
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				matriz[i][j] = scanner.nextInt();
 			}
-		}
+		}	
 		
-		// Primeira posição
+		// Posição da busca
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				if (matriz[i][j] == position) {
-					System.out.println("A primeira aparição: " + i + " " + j);
-					break;
+					System.out.println("Posição: " + i + ", " + j);
+					if (j > 0) {
+						System.out.println("Esquerda : " + matriz[i][j-1]);
+					}
+					if (i > 0) {
+						System.out.println("Topo : " + matriz[i-1][j]);
+					}
+					if (j < matriz[i].length-1) {
+						System.out.println("Direita : " + matriz[i][j+1]);
+					}
+					if (i < matriz.length-1) {
+						System.out.println("Embaixo : " + matriz[i+1][j]);
+					}				
 				}
 			}
 		}
-		
-		// Números negativos
-		int number = 0;
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				if (matriz[i][j] < 0) {
-					number++;
-				}
-			}
-		}
-		System.out.println("Números negativos encontrados: " + number);
 	}
 }
