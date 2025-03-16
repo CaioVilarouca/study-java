@@ -5,6 +5,5 @@ public class Point {
 		new Point().startProgram();
 	}
 	public void startProgram() {
-		
 	}
 }

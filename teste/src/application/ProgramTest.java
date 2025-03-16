@@ -1,11 +1,10 @@
 package application;
 
 public class ProgramTest {
+	private static final String LocalDate = null;
+
 	public static void main(String[] args) {
-		new ProgramTest().start();
+		LocalDate 00 = LocalDate.parse("2004-02-10");
 	}
-	
-	public void start() {
-		System.out.println("TESTE");
-	}
+
 }
