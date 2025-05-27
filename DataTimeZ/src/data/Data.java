@@ -17,6 +17,7 @@ public class Data {
 		LocalDate d04 = LocalDate.parse("2004-10-02");
 		LocalDateTime d05 = LocalDateTime.parse("2004-10-02T23:45:10");
 		
+		// Global 
 		Instant d06 = Instant.parse("2004-10-02T05:45:10Z");
 		Instant d07 = Instant.parse("2004-10-02T05:45:10-03:00");// Adiantado
 
