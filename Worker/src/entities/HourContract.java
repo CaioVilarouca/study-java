@@ -40,9 +40,8 @@ public class HourContract {
 	public void setHours(Integer hours) {
 		Hours = hours;
 	}
-
-	@Override
-	public String toString() {
-		return "HourContract [date=" + date + ", valuePerHour=" + valuePerHour + ", Hours=" + Hours + "]";
+	
+	public double totalValue() {
+		return valuePerHour * Hours;
 	}
 }

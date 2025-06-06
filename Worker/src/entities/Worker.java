@@ -1,5 +1,8 @@
 package entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import entites.enums.WorkerLevel;
 
 public class Worker {
@@ -8,6 +11,7 @@ public class Worker {
 	private Double baseSalary;
 	
 	private Department department;
+	private List<HourContract> contracts = new ArrayList<>();
 	
 	public Worker() {
 		
@@ -53,9 +57,15 @@ public class Worker {
 		this.department = department;
 	}
 
-	@Override
-	public String toString() {
-		return "Worker [name=" + name + ", leve=" + leve + ", baseSalary=" + baseSalary + ", department=" + department
-				+ "]";
+	public void setContracts(List<HourContract> contracts) {
+		this.contracts = contracts;
+	}
+
+	public void addContract(HourContract contract) {
+		contracts.add(contract);
+	}
+	
+	public void removeContract(HourContract contract) {
+		contracts.remove(contract);
 	}
 }
