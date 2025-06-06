@@ -43,7 +43,5 @@ public class Data {
 		System.out.println("fmt2 = " + d09 + "\n");
 		System.out.println("D10 = " + d10);
 		System.out.println("D11 = " + d11);
-
-
 	}
 }
