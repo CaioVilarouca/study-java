@@ -40,4 +40,9 @@ public class Client {
 	public void setNasc(Date nasc) {
 		this.nasc = nasc;
 	}
+
+	@Override
+	public String toString() {
+		return "Client [name=" + name + ", e_mail=" + e_mail + ", nasc=" + nasc + "]";
+	}
 }
