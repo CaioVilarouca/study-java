@@ -2,9 +2,8 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
 import enities.enums.OrderStatus;
@@ -20,7 +19,9 @@ public class PichauCart {
 	}
 	public void exe() {
 		// Coleta de dados do clinte para obj Client
+		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
+		double total = 0;
 		
 		System.out.println("Entre com os dados: ");
 		System.out.print("Nome: ");
@@ -38,10 +39,8 @@ public class PichauCart {
 			Date date = format.parse(dateString);
 			Date dateNow = new Date();
 			
-			@SuppressWarnings("unused")
 			Client client = new Client(name, e_mail, date);
 			
-			@SuppressWarnings("unused")
 			Order order = new Order(dateNow, OrderStatus.PROCESSANDO);
 			System.out.println("Status: " + OrderStatus.PROCESSANDO);
 			
@@ -61,6 +60,8 @@ public class PichauCart {
 				Product product = new Product(nameProduct, priceProduct);
 				OrderCart orderCart = new OrderCart(quantityProduct, product.getPrice());
 				order.addProduct(product);
+				
+				total += orderCart.subTotal();
 			}
 			System.out.println("\n");
 			
@@ -77,6 +78,8 @@ public class PichauCart {
 			System.out.println();
 			System.out.println("Lista");
 			order.printList();
+			System.out.println("Total das compras R$" + total);
+			System.out.println(OrderStatus.ENTREGUE);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}	
