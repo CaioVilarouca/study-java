@@ -12,6 +12,12 @@ public class Order {
 	
 	private List<Product> product = new ArrayList<>();
 
+	public Order(Date moment, OrderStatus status) {
+		super();
+		this.moment = moment;
+		this.status = status;
+	}
+
 	public Date getMoment() {
 		return moment;
 	}
@@ -43,4 +49,11 @@ public class Order {
 	public void removeProduct(Product productADD) {
 		product.remove(productADD);
 	}
+
+	@Override
+	public String toString() {
+		return "Order [moment=" + moment + ", status=" + status;
+	}
+	
+	
 }
