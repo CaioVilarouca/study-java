@@ -8,6 +8,7 @@ import java.util.Scanner;
 import enities.enums.OrderStatus;
 import entities.Client;
 import entities.Order;
+import entities.OrderCart;
 import entities.Product;
 
 
@@ -56,7 +57,11 @@ public class PichauCart {
 				int quantityProduct = scanner.nextInt();
 				
 				Product product = new Product(nameProduct, priceProduct);
+				OrderCart orderCart = new OrderCart(quantityProduct, product.getPrice());
+				order.addProduct(product);
 			}
+			System.out.println("\n");
+			order.printList();
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}	

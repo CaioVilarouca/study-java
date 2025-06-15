@@ -49,6 +49,12 @@ public class Order {
 	public void removeProduct(Product productADD) {
 		product.remove(productADD);
 	}
+	
+	public void printList() {
+		for (Product x : product) {
+			System.out.println(x);
+		}
+	}
 
 	@Override
 	public String toString() {
