@@ -2,6 +2,8 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -61,6 +63,19 @@ public class PichauCart {
 				order.addProduct(product);
 			}
 			System.out.println("\n");
+			
+	        SimpleDateFormat formatDateH = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+	        SimpleDateFormat formatDate = new SimpleDateFormat("dd/MM/yyyy");
+
+	        
+	        String dateMomentString = formatDateH.format(order.getMoment());
+	        System.out.println("Data " + dateMomentString + " Status:" + OrderStatus.ENVIADO);
+	        
+	        String dateNascString = formatDate.format(client.getNasc());
+	        System.out.println("Cliente: " + client + " (" + dateNascString + ")");
+	        
+			System.out.println();
+			System.out.println("Lista");
 			order.printList();
 		} catch (ParseException e) {
 			e.printStackTrace();
