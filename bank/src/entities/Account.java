@@ -1,12 +1,11 @@
 package entities;
 
 public class Account {
-	protected Integer  number;
+	protected Integer number;
 	protected String holder;
 	protected Double balance;
 	
 	public Account() {
-		
 	}
 	
 	public Account(Integer number, String holder, Double balance) {
