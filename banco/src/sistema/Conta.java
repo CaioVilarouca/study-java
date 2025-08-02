@@ -3,7 +3,7 @@ package sistema;
 public class Conta {
 	private Integer numeroConta;
 	private String titular;
-	private Double saldo;
+	protected Double saldo;
 	
 	public Conta() {
 		
@@ -21,10 +21,5 @@ public class Conta {
 	
 	public void deposito(Double amount) {
 		saldo += amount;
-	}
-
-	@Override
-	public String toString() {
-		return "Conta [numeroConta=" + numeroConta + ", titular=" + titular + ", saldo R$" + saldo + "]";
 	}
 }
