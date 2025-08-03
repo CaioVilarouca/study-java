@@ -13,6 +13,6 @@ public class ContaPoupanca extends Conta{
 	}
 	
 	public void update() {
-		taxaJuros -= 0.5;
+		saldo += saldo * taxaJuros;
 	}
 }
