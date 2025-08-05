@@ -28,7 +28,7 @@ public class Conta {
 	}
 	
 	public void retirada(Double amount) {
-		saldo -= amount;
+		saldo -= amount + 5;
 	}
 	
 	public void deposito(Double amount) {

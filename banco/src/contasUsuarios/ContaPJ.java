@@ -30,4 +30,9 @@ public class ContaPJ extends Conta {
 		}
 	}
 	
+	@Override
+	public void retirada(Double amount) {
+		super.retirada(amount);
+		saldo -= 2.0;
+	}
 }
