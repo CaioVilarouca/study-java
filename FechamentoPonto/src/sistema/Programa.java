@@ -17,6 +17,8 @@ public class Programa {
 		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
 		
+		double rendimentoColabores = 0, rendimentoColaboresTerceirizado = 0;
+		
 			// Registro de empregados da empresa
 			List <FechamentoPonto> registroColaboradores = new ArrayList<>();
 		
@@ -52,19 +54,17 @@ public class Programa {
 
 				} else {
 				    System.out.println("ERRO! Valor informado [ " + resultado + " ]");
-				}
-				
+				}				
 				
 				Empregado empregadoTerceirizado = new EmpregadoTerceirizado(nome, horasTrabalhadas, valorHora, bonus);
 				Empregado empregado = new Empregado(nome, horasTrabalhadas, valorHora);
-
+				
 				// Registro de colaboradores
-				FechamentoPonto fechamentoEmpregado = new FechamentoPonto(empregado);
-				FechamentoPonto fechamentoEmpregadoTerceirizado = new FechamentoPonto(empregadoTerceirizado);
+				FechamentoPonto fechamentoEmpregado = new FechamentoPonto(empregado, empregadoTerceirizado);
+			
 
 				// Add na lista de colaboradores
-				registroColaboradores.add(fechamentoEmpregado);
-				registroColaboradores.add(fechamentoEmpregadoTerceirizado);
+				//registroColaboradores.add(fechamentoEmpregado, fechamentoEmpregadoTerceirizado);
 				
 				System.out.println("---------------------------------------");
 			}

@@ -40,7 +40,12 @@ public class Empregado {
 	public void setValorHoraTrabalhada(Double valorHoraTrabalhada) {
 		this.valorHoraTrabalhada = valorHoraTrabalhada;
 	}
-
+	
+	// Calculando o salario do colaborador
+	public double calcRedimentos() {
+		return  horasTrabalhadas * valorHoraTrabalhada;
+	}
+	
 	@Override
 	public String toString() {
 		return "Empregado [nome=" + nome + ", horasTrabalhadas=" + horasTrabalhadas + ", valorHoraTrabalhada="

@@ -1,7 +1,7 @@
 package contratosTrabalhista;
 
-public class EmpregadoTerceirizado extends Empregado{
-	private Double bonus;
+public final class EmpregadoTerceirizado extends Empregado{
+	private Double bonus = 0.0;
 	
 	public EmpregadoTerceirizado() {
 		
@@ -12,9 +12,6 @@ public class EmpregadoTerceirizado extends Empregado{
 		this.bonus = bonus;
 	}
 
-	@Override
-	public String toString() {
-		return "EmpregadoTerceirizado [bonus=" + bonus + "]";
-	}
+
 	
 }

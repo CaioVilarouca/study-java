@@ -6,25 +6,16 @@ import contratosTrabalhista.EmpregadoTerceirizado;
 public final class FechamentoPonto {
 	private Empregado empregado;
 	private EmpregadoTerceirizado empregadoTerceirizado;
+	private Double salarioColaborador;
 	
 	public FechamentoPonto() {
-		
 	}
 
-	public FechamentoPonto(Empregado empregado) {
+	public FechamentoPonto(Empregado empregado, EmpregadoTerceirizado empregadoTerceirizado) {
 		super();
 		this.empregado = empregado;
-	}
-
-	public FechamentoPonto(EmpregadoTerceirizado empregadoTerceirizado) {
-		super();
 		this.empregadoTerceirizado = empregadoTerceirizado;
 	}
 
-	@Override
-	public String toString() {
-		return "FechamentoPonto [empregado=" + empregado + "\nempregadoTerceirizado=" + empregadoTerceirizado + "]";
-	}
-	
 	
 }
