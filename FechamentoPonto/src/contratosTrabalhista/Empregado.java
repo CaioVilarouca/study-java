@@ -3,8 +3,8 @@ package contratosTrabalhista;
 public class Empregado {
 	
 	private String nome;
-	private Double horasTrabalhadas;
-	private Double valorHoraTrabalhada;
+	protected Double horasTrabalhadas;
+	protected Double valorHoraTrabalhada;
 	
 	public Empregado() {
 		
@@ -44,11 +44,5 @@ public class Empregado {
 	// Calculando o salario do colaborador
 	public double calcRedimentos() {
 		return  horasTrabalhadas * valorHoraTrabalhada;
-	}
-	
-	@Override
-	public String toString() {
-		return "Empregado [nome=" + nome + ", horasTrabalhadas=" + horasTrabalhadas + ", valorHoraTrabalhada="
-				+ valorHoraTrabalhada + "]";
 	}
 }

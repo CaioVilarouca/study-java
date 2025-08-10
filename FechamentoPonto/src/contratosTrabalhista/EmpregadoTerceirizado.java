@@ -1,7 +1,7 @@
 package contratosTrabalhista;
 
 public final class EmpregadoTerceirizado extends Empregado{
-	private Double bonus = 0.0;
+	private Double bonus;
 	
 	public EmpregadoTerceirizado() {
 		
@@ -12,6 +12,19 @@ public final class EmpregadoTerceirizado extends Empregado{
 		this.bonus = bonus;
 	}
 
+	public Double getBonus() {
+		return bonus;
+	}
 
-	
+	public void setBonus(Double bonus) {
+		this.bonus = bonus;
+	}
+
+	// Calculando o salario do colaborador
+	@Override
+	public final double calcRedimentos() {
+		// Vai la super Class pega o resultado + bonus * 1.1
+		return  super.calcRedimentos() + bonus * 1.1;
+	}	
+
 }
