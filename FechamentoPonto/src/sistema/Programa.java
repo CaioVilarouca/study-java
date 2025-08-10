@@ -1,5 +1,7 @@
 package sistema;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -14,6 +16,9 @@ public class Programa {
 	public void inicio() {
 		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
+		
+			// Registro de empregados da empresa
+			List <FechamentoPonto> registroColaboradores = new ArrayList<>();
 		
 			System.out.print("Informe o numero de colaboradores: ");
 			int numeroColaboradores = scanner.nextInt();
@@ -37,23 +42,38 @@ public class Programa {
 				Double valorHora = scanner.nextDouble();
 				
 				// Verficando se e um colaborador terceirizado
+				Double bonus = 0.0;
 				if (resultado == 'S' || resultado == 's') {
-					
 					System.out.print("Bonus :");
-					Double bonus = scanner.nextDouble();
-					Empregado empregado = new EmpregadoTerceirizado(nome, horasTrabalhadas, valorHora, bonus);
+					bonus = scanner.nextDouble();
 					
-				}else if (resultado == 'N' || resultado == 'n') {
-					Empregado empregado = new Empregado(nome, horasTrabalhadas, valorHora);
+				} else if (resultado == 'N' || resultado == 'n') {
+				    System.out.println("Sem bônus.");
+
 				} else {
-					System.out.println("ERRO! Valor informado [ " + resultado + " ]");
+				    System.out.println("ERRO! Valor informado [ " + resultado + " ]");
 				}
+				
+				
+				Empregado empregadoTerceirizado = new EmpregadoTerceirizado(nome, horasTrabalhadas, valorHora, bonus);
+				Empregado empregado = new Empregado(nome, horasTrabalhadas, valorHora);
+
+				// Registro de colaboradores
+				FechamentoPonto fechamentoEmpregado = new FechamentoPonto(empregado);
+				FechamentoPonto fechamentoEmpregadoTerceirizado = new FechamentoPonto(empregadoTerceirizado);
+
+				// Add na lista de colaboradores
+				registroColaboradores.add(fechamentoEmpregado);
+				registroColaboradores.add(fechamentoEmpregadoTerceirizado);
 				
 				System.out.println("---------------------------------------");
 			}
-			
+	
 
-			
+			System.out.println("Registro");
+			for (FechamentoPonto x : registroColaboradores) {
+				System.out.println(x);
+			}
 			
 		scanner.close();
 	}

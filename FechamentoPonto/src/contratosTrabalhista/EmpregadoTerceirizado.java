@@ -11,6 +11,10 @@ public class EmpregadoTerceirizado extends Empregado{
 		super(nome, horasTrabalhadas, valorHoraTrabalhada);
 		this.bonus = bonus;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "EmpregadoTerceirizado [bonus=" + bonus + "]";
+	}
 	
 }

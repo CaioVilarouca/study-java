@@ -40,4 +40,10 @@ public class Empregado {
 	public void setValorHoraTrabalhada(Double valorHoraTrabalhada) {
 		this.valorHoraTrabalhada = valorHoraTrabalhada;
 	}
+
+	@Override
+	public String toString() {
+		return "Empregado [nome=" + nome + ", horasTrabalhadas=" + horasTrabalhadas + ", valorHoraTrabalhada="
+				+ valorHoraTrabalhada + "]";
+	}
 }
