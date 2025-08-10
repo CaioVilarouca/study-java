@@ -28,6 +28,7 @@ public class Conta {
 	}
 	
 	public void retirada(Double amount) {
+		// Um retirada N valor mais 5 de taxa juros
 		saldo -= amount + 5;
 	}
 	

@@ -25,7 +25,9 @@ public class ContaPJ extends Conta {
 	}
 	
 	public void limte(Double amount) {
+		// Qted a ser Emp nao pode ser mais q atributo LimiteEmp 
 		if (amount <= LimiteEmp) {
+			// Taxa de juros 10 
 			saldo  += amount - 10.0;
 		}
 	}
