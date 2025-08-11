@@ -1,19 +1,34 @@
 package teste;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Teste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		        double mediaMinima = 9.0;
-
-		        double mediaAluno1 = 7.5;
-		        boolean aprovado1 = mediaAluno1 >= mediaMinima;
-
-		        System.out.println(aprovado1);
-		    }
+		Scanner scanner = new Scanner(System.in);
 		
-
-	
-
+		String[] vect = scanner.nextLine().split(" ");
+		
+		int position = scanner.nextInt();
+		
+		try {
+			System.out.printf("Position %d value: %s", position, vect[position]);
+			
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Valor INVALIDO!");
+			
+		} catch (InputMismatchException e) {
+			System.out.println("Esse campo e aceito apenas numeros.");
+		} finally {
+			int cont = 0;
+			
+			for (String x : vect) {
+				cont++;
+			}
+			
+			System.out.println("\nVect tem " + cont);
+		}
+		scanner.close();
+	}
 }
