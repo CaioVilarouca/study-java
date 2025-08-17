@@ -14,7 +14,7 @@ public class Teste {
 	
 	public void method2(Scanner scanner) {
 		
-		String[] vect = scanner.nextLine().split(" "); // Add dados no vector na mesma linha usando espaçamento
+		String[] vect = scanner.nextLine().split(" "); // Add dados no vector na mesma linha usando espaço
 		
 		int position = scanner.nextInt();
 		
@@ -29,10 +29,9 @@ public class Teste {
 		} finally {
 			int cont = 0;
 			
-			for (String x : vect) {
+			for (int i = 0; i < vect.length; i++) {
 				cont++;
 			}
-			
 			System.out.println("\nVect tem " + cont);
 		}
 	}
