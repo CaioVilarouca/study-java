@@ -39,9 +39,9 @@ public class Reservation {
 		return checkOut;
 	}
 	
-	public long duration() { // Calc a duração em dia 
-		long diff = checkOut.getTime() - checkIn.getTime();
-		return TimeUnit.DAYS.convert(diff, TimeUnit.MICROSECONDS);
+	public long duration() {// Calc o dia
+	    long diff = checkOut.getTime() - checkIn.getTime();
+	    return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 	}
 	
 	public void uptade(Date checkIn, Date checkOut) {
