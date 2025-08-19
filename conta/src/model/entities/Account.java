@@ -1,5 +1,7 @@
 package model.entities;
 
+import model.exception.DominException;
+
 public class Account {
 	private Integer number;
 	private String holder;
@@ -44,11 +46,14 @@ public class Account {
 	
 	// Depositar na conta
 	public void deposit(Double amount) {
-		balance += amount;
+		this.balance += amount;
 	}
 	
 	// Sacar na conta
 	public void withdraw(Double amount) {
-		balance -= amount;
+		if (amount > withDrawLimit) {
+			throw new DominException("The amount exceeds withdraw limit");
+		}
+		this.balance -= amount;
 	}
 }
