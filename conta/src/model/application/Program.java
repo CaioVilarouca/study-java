@@ -1,6 +1,5 @@
 package model.application;
 
-import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -35,9 +34,8 @@ public class Program {
 			
 		} catch (DominException e) {
 			System.out.println("Withdraw error: " + e.getMessage());
-		} catch (InputMismatchException e) {
-			System.out.println("Number error: input INTEGER");
-
+		} catch (RuntimeException e) {
+			System.out.println("Unexpected error");
 		}
 		scanner.close();
 	}

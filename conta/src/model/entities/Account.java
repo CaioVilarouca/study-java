@@ -9,7 +9,7 @@ public class Account {
 	private Double withDrawLimit;
 	
 	public Account() {
-		
+		super();
 	}
 
 	public Account(Integer number, String holder, Double balance, Double withDrawLimit) {
@@ -53,6 +53,9 @@ public class Account {
 	public void withdraw(Double amount) {
 		if (amount > withDrawLimit) {
 			throw new DominException("The amount exceeds withdraw limit");
+		}
+		if (amount > balance) {
+			throw new DominException("Not enougbh balance");
 		}
 		this.balance -= amount;
 	}
