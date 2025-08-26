@@ -36,7 +36,7 @@ public class Program {
 			System.out.println("Withdraw error: " + e.getMessage());
 		} catch (RuntimeException e) {
 			System.out.println("Unexpected error");
-		}
+		}// Caio Vilarouca AGORA
 		scanner.close();
 	}
 }
