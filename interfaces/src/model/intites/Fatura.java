@@ -28,8 +28,8 @@ public class Fatura {
 		this.taxa = taxa;
 	}
 	
-	public double pagamentoTotal() {
-		return getTaxa() + getPagamento();
+	public double getPagamentoTotal() {
+		return getPagamento() + getTaxa();
 	}
 	
 }
