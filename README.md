@@ -1,1 +1,2 @@
-# study-java
+☕ Repositório dedicado ao estudo e revisão da linguagem Java.
+Este repositório reúne exercícios, exemplos práticos e anotações desenvolvidos durante o estudo da linguagem Java, com foco no reforço e na revisão de conceitos fundamentais e intermediários. O conteúdo contempla práticas realizadas em cursos, estudos dirigidos e experimentações pessoais, servindo como material de apoio para consolidação da sintaxe, orientação a objetos, estruturas de dados básicas, tratamento de exceções e boas práticas de programação em Java.
