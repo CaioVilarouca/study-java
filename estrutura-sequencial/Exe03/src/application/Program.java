@@ -14,5 +14,6 @@ public class Program {
 		int number03 = scanner.nextInt();
 		int number04 = scanner.nextInt();
 		System.out.printf("Diferença = %s", number01*number02-number03*number04);
+		scanner.close();
 	}
 }
