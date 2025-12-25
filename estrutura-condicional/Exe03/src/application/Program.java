@@ -1,5 +1,4 @@
-package applicaton;
-
+package application;
 import java.util.Scanner;
 
 public class Program {
@@ -14,5 +13,4 @@ public class Program {
 			System.out.println("Não Multiplos");
 		scanner.close();
 	}
-
 }
