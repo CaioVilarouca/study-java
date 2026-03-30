@@ -4,4 +4,7 @@ Operadores Aritméticos
 		-		subtração
 		*		multiplicação
 		/		divisão
-	       %		resto da divisão ("mod")
+	    %		resto da divisão ("mod")
+
+Casting em Java
+é a conversão de um tipo de dado para outro, seja entre tipos primitivos ou objetos
