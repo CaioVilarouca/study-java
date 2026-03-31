@@ -5,4 +5,10 @@ Expressões comparativas
 		>=		maior ou igual
 		<=		menor ou igual
 		==		igual
-		!-		diferente
+		!=		diferente
+
+Expressões lógicas
+	Operador 	Significado
+		&&		E
+		||		ou
+		!		não
