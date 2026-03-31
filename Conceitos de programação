@@ -16,3 +16,12 @@ Código fonte:
 	É aquele escrito pelo programador em linguagem de programação.
 
 JVM: Java Virtual Machine
+
+----------------------------------------------------------------------------
+Camel Case: 
+	Tradução: Corcova do Camelo
+	EX: int idadeDoColabodador.
+
+Pascal Case: 
+	EX: Class idadeDoColabodador.
+	usado nas classes;
