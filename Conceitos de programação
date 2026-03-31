@@ -25,3 +25,7 @@ Camel Case:
 Pascal Case: 
 	EX: Class idadeDoColabodador.
 	usado nas classes;
+----------------------------------------------------------------------------
+Funções ou Métodos
+	Representam um processamento que possui um significado.
+	Vantagens: Reaproveitamento e delegação.
