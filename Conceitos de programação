@@ -29,3 +29,13 @@ Pascal Case:
 Funções ou Métodos
 	Representam um processamento que possui um significado.
 	Vantagens: Reaproveitamento e delegação.
+----------------------------------------------------------------------------
+Classe: 
+	É um tipo estruturado que pode conter (membros)
+	Classe pode prover muitos outros recurso:
+		1) Construtores
+		2) Sobrecarga
+		3) Encapsulamento 
+		4) Herança
+		5) Polimorfismo
+----------------------------------------------------------------------------
