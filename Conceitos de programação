@@ -49,3 +49,12 @@ Object
 	equals -compara se o objeto é  igual a outro 
 	hashCode - retorna um código hash do objeto
 	toString - converte o objeto para string
+----------------------------------------------------------------------------
+Membro estáticos:
+	São membros que fazem sentido independentemente de objetos. Não precisam de objeto para serem chamados. São chamadas a partir do próprio nome da classe. 
+	EX: Math.sqrt(double); Math é um nome da Classe não do objeto.
+
+	Membro estático vai da o mesmo resultado independente de qualquer objeto.
+----------------------------------------------------------------------------
+Declaração de constantes:
+	public static final double PI = 3.14; ----------------------------------------------------------------------------
