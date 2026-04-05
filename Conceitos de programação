@@ -28,7 +28,7 @@ Pascal Case:
 ----------------------------------------------------------------------------
 Funções ou Métodos
 	Representam um processamento que possui um significado.
-	Vantagens: Reaproveitamento e delegação.
+	Vantagens: Reaproveitamento e delegação(Coesão).
 ----------------------------------------------------------------------------
 Classe: 
 	É um tipo estruturado que pode conter (membros)
@@ -39,3 +39,5 @@ Classe:
 		4) Herança
 		5) Polimorfismo
 ----------------------------------------------------------------------------
+This: 
+	Auta referência para o objeto.
