@@ -19,9 +19,4 @@ public class Triangle {
 		double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
 		return area;
 	}
-
-	@Override
-	public String toString() {
-		return "Triangle [a=" + a + ", b=" + b + ", c=" + c + "]";
-	}
 }
