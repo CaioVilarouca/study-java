@@ -55,6 +55,8 @@ Membro estáticos:
 	EX: Math.sqrt(double); Math é um nome da Classe não do objeto.
 
 	Membro estático vai da o mesmo resultado independente de qualquer objeto.
+    
+    Não posso chamar um método estático na classe que não é estático
 ----------------------------------------------------------------------------
 Declaração de constantes:
 	public static final double PI = 3.14; ----------------------------------------------------------------------------
