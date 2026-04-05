@@ -23,8 +23,8 @@ public class Program {
 			else 
 				y=new Triangle(a, b, c);
 		}
-		double areaX = x.counter(x);
-		double areaY = y.counter(y);
+		double areaX = x.counter();
+		double areaY = y.counter();
 		if (areaX > areaY)
 			System.out.println("Larger area X:");
 		else 

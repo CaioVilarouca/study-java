@@ -14,7 +14,7 @@ public class Triangle {
 		this.c = c;
 	}
 	
-	public double counter(Triangle triangle) {
+	public double counter() {
 		double p=(a+b+c)/2.0;
 		double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
 		return area;
