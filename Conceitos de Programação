@@ -15,11 +15,11 @@ IDE
 Código fonte: 
 	É aquele escrito pelo programador em linguagem de programação.
 
-JVM: Java Virtual Machine
+JVM: Java Virtual Machine.
 
 ----------------------------------------------------------------------------
 Camel Case: 
-	Tradução: Corcova do Camelo
+	Tradução: Corcova do Camelo.
 	EX: int idadeDoColabodador.
 
 Pascal Case: 
@@ -31,7 +31,7 @@ Funções ou Métodos
 	Vantagens: Reaproveitamento e delegação(Coesão).
 ----------------------------------------------------------------------------
 Classe: 
-	É um tipo estruturado que pode conter (membros)
+	É um tipo estruturado que pode conter (membros).
 	Classe pode prover muitos outros recurso:
 		1) Construtores
 		2) Sobrecarga
@@ -42,13 +42,13 @@ Classe:
 This: 
 	Auta referência para o objeto.
 Object
-	Toda classe em java é um subclasse da classe Object
+	Toda classe em java é um subclasse da classe Object.
 
-	Object possui os seguintes métodos 
-	getClass - retorna o tipo do objeto 
-	equals -compara se o objeto é  igual a outro 
-	hashCode - retorna um código hash do objeto
-	toString - converte o objeto para string
+	Object possui os seguintes métodos. 
+	getClass - retorna o tipo do objeto.
+	equals -compara se o objeto é  igual a outro.
+	hashCode - retorna um código hash do objeto.
+	toString - converte o objeto para string.
 ----------------------------------------------------------------------------
 Membro estáticos:
 	São membros que fazem sentido independentemente de objetos. Não precisam de objeto para serem chamados. São chamadas a partir do próprio nome da classe. 
@@ -56,7 +56,7 @@ Membro estáticos:
 
 	Membro estático vai da o mesmo resultado independente de qualquer objeto.
     
-    Não posso chamar um método estático na classe que não é estático
+    Não posso chamar um método estático na classe que não é estático.
 ----------------------------------------------------------------------------
 Declaração de constantes:
 	public static final double PI = 3.14; 
@@ -64,4 +64,5 @@ Declaração de constantes:
 Sobrecarga
 	É um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parâmetros.
 ----------------------------------------------------------------------------
-
+Encapsulamento
+	É um princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras que mantenham os objetos em um estado consistente.
