@@ -17,7 +17,7 @@ Código fonte:
 
 JVM: Java Virtual Machine.
 
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Camel Case: 
 	Tradução: Corcova do Camelo.
 	EX: int idadeDoColabodador.
@@ -25,11 +25,11 @@ Camel Case:
 Pascal Case: 
 	EX: Class idadeDoColabodador.
 	usado nas classes;
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Funções ou Métodos
 	Representam um processamento que possui um significado.
 	Vantagens: Reaproveitamento e delegação(Coesão).
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Classe: 
 	É um tipo estruturado que pode conter (membros).
 	Classe pode prover muitos outros recurso:
@@ -38,7 +38,7 @@ Classe:
 		3) Encapsulamento 
 		4) Herança
 		5) Polimorfismo
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 This: 
 	Auta referência para o objeto.
 Object
@@ -49,7 +49,7 @@ Object
 	equals -compara se o objeto é  igual a outro.
 	hashCode - retorna um código hash do objeto.
 	toString - converte o objeto para string.
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Membro estáticos:
 	São membros que fazem sentido independentemente de objetos. Não precisam de objeto para serem chamados. São chamadas a partir do próprio nome da classe. 
 	EX: Math.sqrt(double); Math é um nome da Classe não do objeto.
@@ -57,24 +57,38 @@ Membro estáticos:
 	Membro estático vai da o mesmo resultado independente de qualquer objeto.
     
     Não posso chamar um método estático na classe que não é estático.
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Declaração de constantes:
 	public static final double PI = 3.14; 
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Sobrecarga
 	É um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parâmetros.
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Encapsulamento
 	É um princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras que mantenham os objetos em um estado consistente.
     EX: os Get os Set nos objetos para acessar os atributos 
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Modificadores de acesso
 	private: o membro só pode ser acessado na própria classe.
 	nada: o membro só pode ser acessado nas classes do  mesmo pacote.
 	proctected: o membro só´pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes.
 	public: o membro é acessado por todas classes (ao menos que ele resida em um módulo diferente que não exporte o pacote onde ele está).
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 Classes são tipos referências 
 	Variáveis cujo tipo são classes não devem ser entendidas co mo caixas, mas sim "tentáculos" (Ponteiros) para caixas.
 	Valor "NULL"
 	Tipos referências aceitam o valor "null", que indica que a variável aponta pra ninguém.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Vetor
+	Em programação, "vetor" é o nome dados a arranjos unidimensionais.
+	Arranjo (Array) é uma estrutura de dados: 
+		Homogênea
+		Ordenada
+		Alocada de uma vez só
+	
+	Vantagens;
+		Acesso imediato aos elementos pela sua posição
+	Desvantagens: 
+		Tamanho fixo 
+		Dificuldade para se realizar inserções e deleções.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
