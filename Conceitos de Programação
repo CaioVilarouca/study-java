@@ -1,5 +1,7 @@
 Java foi criado em 1995 por James Gosling.
 Mascote do java é Duke.
+
+Java começou a ser desenvolvido no início da década de 1990 por James Gosling e sua equipe, enquanto trabalhavam na Sun Microsystems. A linguagem foi lançada oficialmente em 1995. Seu objetivo era permitir o desenvolvimento de programas capazes de funcionar em múltiplos dispositivos e sistemas operacionais sem a necessidade de reescrever o código para cada plataforma. Isso foi possível por meio do bytecode, que é executado pela JVM, a Máquina Virtual Java.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 Conceitos de programação
 
