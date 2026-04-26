@@ -83,6 +83,10 @@ Classes são tipos referências
 	Variáveis cujo tipo são classes não devem ser entendidas como caixas, mas sim "tentáculos" (Ponteiros) para caixas.
 	Valor "NULL"
 	Tipos referências aceitam o valor "null", que indica que a variável aponta pra ninguém.
+    
+	Memória 
+	       Stack: Vai guardar um endereço de mémoria(Ponteiro)
+	       Heap: Vai guarda o valor em tempo de execução do programa.
 
 Vetor
 	Em programação, "vetor" é o nome dados a arranjos unidimensionais.
