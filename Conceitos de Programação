@@ -106,3 +106,17 @@ Wrapper classes
 	
 	Wraper classes aceita valores vazio ou null 
 
+List / ArrayList
+	Lista é uma estrutura de dados:
+		Homogênea e Ordenada
+
+	Tipos interface: list
+	Classes que implementam: ArrayList, LinkedList  e etc..
+
+	Vantagens: 
+		Tamanho variável
+		Facilidade para se realizar inserções e deleções
+	Desvantagens:
+		Acesso sequencial aos elementos
+----------------------------------------------------------------------------------
+
