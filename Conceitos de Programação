@@ -80,7 +80,7 @@ Modificadores de acesso
 	public: o membro é acessado por todas classes (ao menos que ele resida em um módulo diferente que não exporte o pacote onde ele está).
 
 Classes são tipos referências 
-	Variáveis cujo tipo são classes não devem ser entendidas co mo caixas, mas sim "tentáculos" (Ponteiros) para caixas.
+	Variáveis cujo tipo são classes não devem ser entendidas como caixas, mas sim "tentáculos" (Ponteiros) para caixas.
 	Valor "NULL"
 	Tipos referências aceitam o valor "null", que indica que a variável aponta pra ninguém.
 
