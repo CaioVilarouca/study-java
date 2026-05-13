@@ -129,3 +129,13 @@ Matriz
 		Tamanho fixo.
 		Dificuldade para se realizar inserções e deleções.
 
+Data
+	Data-Hora-local:
+		Sem fuso horário
+		Quando o momento exato não interessa a ´pessoas de outro fuso horário.
+		uso comum: Uso local
+	Data-hora-global:
+		Com fuso horário
+		Quando o momento exato interessa a pessoas de outro fuso horário.
+		uso comum: WEB
+
