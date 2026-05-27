@@ -45,7 +45,8 @@ Classe:
 		5) Polimorfismo
 
 This: 
-	Auta referência para o objeto.
+	Auta referência para o objeto
+
 Object
 	Toda classe em java é um subclasse da classe Object.
 
@@ -95,9 +96,10 @@ Vetor
 		Ordenada
 		Alocada de uma vez só
 	
-	Vantagens;
+	Vantagens
 		Acesso imediato aos elementos pela sua posição
-	Desvantagens: 
+
+	Desvantagens
 		Tamanho fixo 
 		Dificuldade para se realizar inserções e deleções.
 
@@ -116,6 +118,7 @@ List / ArrayList
 	Vantagens: 
 		Tamanho variável
 		Facilidade para se realizar inserções e deleções
+
 	Desvantagens:
 		Acesso sequencial aos elementos
 
@@ -125,17 +128,22 @@ Matriz
 	
 	Vantagens:
 		Acesso imediato aos elementos pela sua posição:
+
 	Desvantagens:
 		Tamanho fixo.
 		Dificuldade para se realizar inserções e deleções.
 
 Data
-	Data-Hora-local:
+	Data-Hora-local
 		Sem fuso horário
 		Quando o momento exato não interessa a ´pessoas de outro fuso horário.
 		uso comum: Uso local
-	Data-hora-global:
+
+	Data-hora-global
 		Com fuso horário
 		Quando o momento exato interessa a pessoas de outro fuso horário.
 		uso comum: WEB
+
+   Duração
+        Tempo decorrido entre duas data-horas
 
