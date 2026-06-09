@@ -147,3 +147,6 @@ Data
    Duração
         Tempo decorrido entre duas data-horas
 
+Enumerações
+    É um tipo especial que serve para especificar de forma literal um conjunto de constantes relacionadas
+
