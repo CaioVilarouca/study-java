@@ -148,5 +148,12 @@ Data
         Tempo decorrido entre duas data-horas
 
 Enumerações
-    É um tipo especial que serve para especificar de forma literal um conjunto de constantes relacionadas
+    É um tipo especial que serve para especificar de forma literal um conjunto de constantes relacionadas.
+
+Herança
+    É um tipo de associação que permite que uma classe herde TODAS dados e comportamentos de outra (Genérico)
+    
+    Vantagens
+        Reuso
+        Polimorfismo
 
