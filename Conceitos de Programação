@@ -157,3 +157,17 @@ Herança
         Reuso
         Polimorfismo
 
+    UPCSTING
+    DOWNCASTING = (casting)
+
+    Instaceof = verificar o DOWNCASTING
+
+    if (VAR instanceof CLASSE) { 
+        DOWNCASTING 
+    }
+
+    @Override = sobrescrito
+
+    final 
+        ex: public FINAL class Account 
+        Evita que a classe seja herdada
