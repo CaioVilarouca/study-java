@@ -171,3 +171,12 @@ Herança
     final 
         ex: public FINAL class Account 
         Evita que a classe seja herdada
+
+        método a mesma coisa
+        
+        SEGURANÇA: dependendo das regras do negócio, às vezes é desejável garantir que uma classe não seja herdada, ou que um método não seja sobreposto.
+        PERFORMANCE: Verificação mais rápida.
+
+Polimorfismo
+    Em programação Orientada a Objetos, polimorfismo é recurso que permite que variáveis de um mesmo tipo mais genérico possam apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tiupo específico.
+    
