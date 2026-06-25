@@ -179,4 +179,14 @@ Herança
 
 Polimorfismo
     Em programação Orientada a Objetos, polimorfismo é recurso que permite que variáveis de um mesmo tipo mais genérico possam apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tiupo específico.
+
+Classe Abstratos
+    É uma forma de garantir herança total. São classes que não pódenm ser instanciadas
+    
+    Itálico no UML o Abstratos
+
+Métodos Abstratos
+    Se uma classe possuir pelo menos um método abstrato, então esta classe também é abstrata
+    
+    Métodos precisam ser abstratos quando a classe é genérica demais para conter sua implementação
     
