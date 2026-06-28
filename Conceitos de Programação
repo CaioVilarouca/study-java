@@ -189,4 +189,9 @@ Métodos Abstratos
     Se uma classe possuir pelo menos um método abstrato, então esta classe também é abstrata
     
     Métodos precisam ser abstratos quando a classe é genérica demais para conter sua implementação
+
+Try Catch
+    Exceção é qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução
+
     
+        
