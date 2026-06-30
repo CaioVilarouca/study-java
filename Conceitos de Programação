@@ -193,5 +193,8 @@ Métodos Abstratos
 Try Catch
     Exceção é qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução
 
+    IllegalArgumentException 
+        Usar ela quandos os argumentos de um  método for invalidos 
+
     
         
